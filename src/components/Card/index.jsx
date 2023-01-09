@@ -1,6 +1,6 @@
 import React from 'react';
-import './Card.css';
-import Header from './Header';
+import './index.css';
+import Header from '../Layout/Header';
 import CardInput from './CardInput';
 import TaskSubmit from './TaskSubmit';
 
