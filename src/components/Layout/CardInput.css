@@ -1,8 +1,29 @@
 .input_field {
+  display: flex;
+  justify-content: space-between;
   width: 80%;
   height: 70px;
   margin: auto;
   height: 60px;
   border: none;
   border-radius: 5px;
+}
+
+.submit_btn {
+  width: 60px;
+  height: 60px;
+  border: none;
+  border-radius: 5px;
+  background-color: darkblue;
+  color: #ffffff;
+}
+
+.input_field input {
+  width: 80%;
+  border: none;
+  border-radius: 5px;
+}
+
+.input_field input:focus {
+  outline: none;
 }

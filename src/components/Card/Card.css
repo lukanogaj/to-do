@@ -9,7 +9,7 @@
 body {
   width: 100vw;
   height: 100vh;
-  background-color: yellow;
+  background-color: lightgrey;
 }
 
 .container {
@@ -20,7 +20,6 @@ body {
   height: 100%;
   margin: auto;
   padding-top: 30px;
-  background-color: red;
 }
 
 .input__data {

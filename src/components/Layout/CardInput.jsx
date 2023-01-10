@@ -1,27 +1,28 @@
 import React, { useState } from 'react';
 import './CardInput.css';
-import './Todos';
 
 //////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 const CardInput = () => {
-  const [setTask, setNewTask] = useState({
-    enteredTask: '',
-  });
+  const [enteredTask, setEnteredTask] = useState('');
   const newTaskHandler = (event) => {
     event.preventDefault();
-    // setNewTask({ ...setTask, enteredTask: event.target.value });
-    setNewTask((prevState) => {
-      return { ...prevState, enteredTask: event.target.value };
-    });
+    setEnteredTask(event.target.value);
   };
+  console.log(enteredTask);
+
   return (
-    <input
-      className='input_field'
-      type='text'
-      placeholder='New Task'
-      onChange={newTaskHandler}
-    />
+    <div className='input_field'>
+      <input
+        type='text'
+        placeholder='New Task'
+        value={enteredTask}
+        onChange={newTaskHandler}
+      />
+      <button type='submit' className='submit_btn' onClick={newTaskHandler}>
+        Add
+      </button>
+    </div>
   );
 };
 

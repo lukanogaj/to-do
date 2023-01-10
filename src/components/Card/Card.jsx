@@ -1,8 +1,8 @@
 import React from 'react';
-import './index.css';
+import './Card.css';
 import Header from '../Layout/Header';
-import CardInput from './CardInput';
-import TaskSubmit from './TaskSubmit';
+import CardInput from '../Layout/CardInput';
+import ToDos from '../ToDos/ToDos';
 
 const Card = () => {
   return (
@@ -10,8 +10,8 @@ const Card = () => {
       <Header />
       <div className='input__data'>
         <CardInput />
-        <TaskSubmit />
       </div>
+      <ToDos />
     </div>
   );
 };
